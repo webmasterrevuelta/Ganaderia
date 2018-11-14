@@ -1,0 +1,18 @@
+@font-face{
+  font-family: 'reserva';
+    src: url('font/brody.woff') format('woff');
+  font-style: normal;
+  font-weight:normal;
+}
+@font-face{
+  font-family: 'shabby';
+    src: url('font/anothershabby.ttf');
+  font-style: normal;
+  font-weight:normal;
+}
+@font-face{
+  font-family: 'jester';
+    src: url('font/jester.ttf');
+  font-style: normal;
+  font-weight:normal;
+}

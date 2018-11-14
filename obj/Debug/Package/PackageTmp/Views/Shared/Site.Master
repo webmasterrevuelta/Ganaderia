@@ -1,0 +1,272 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    </title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuesax/dist/vuesax.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
+    <link href="../../Content/Fonts.css" rel="stylesheet">
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="../../Content/css/ninja-slider/ninja-slider.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="app" v-cloak>    
+        <template lang="html">
+          <div class="centerx example-loading">
+            <div
+              class="fill-row-loading">
+                <div
+                :class="{'activeLoading':activeLoading}"
+                @click="openLoading(type)"
+                v-for="type in types"
+                :id="[`loading-${type}`]"
+                class="vs-con-loading__container loading-example">
+                </div>
+            </div>
+          </div>
+        </template>
+
+        <div class="page">
+            <div id="header">
+                <div id="menucontainer">
+                    <img id="logo-ganaderia" src="../../images/logos/ganaderia-revuelta.png" />
+                    <nav id="navbar" class="navbar navbar-expand-xl navbar-dark bg-dark">
+                        <a id="a-logo" class="navbar-brand">                        
+                            Ganadería 
+                            <span style="    font-weight: 800; letter-spacing: 1px;">
+                                REVUELTA
+                            </span>                            
+                        </a>
+                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navbar-collapse collapse" id="navbarsExample06">
+                            <ul class="navbar-nav mr-auto">                            
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link " data-toggle="dropdown" href="#">INICIO</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">GANADO LIMOUSIN</a></li>
+                                        <li><a href="#">PRODUCTOS TERRASABVIA</a></li>                                   
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">ACERCA DE</a></a>
+                                </li>                            
+    
+                                <li class="nav-item dropdown"  >
+						            <a class="nav-link " data-toggle="dropdown" href="#">PRODUCTOS</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">RESERVA AÑEJA</a></li>
+                                        <li><a href="#">RESERVA DEL CORRAL</a></li>
+                                        <li><a href="#">CASTILLA</a></li>
+                                        <li><a href="#">CARNE SECA</a></li>
+                                        <li><a href="#">MENUDO y MAS...</a></li>                                    
+                                    </ul>
+							    </li>
+                                <li class="nav-item">
+								    <a class="nav-link" href="#">CERTIFICACIONES</a>
+							    </li>
+							    <li class="nav-item dropdown">
+								    <a class="nav-link " data-toggle="dropdown" href="#">CONTACTO</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">AVISO DE PRIVACIDAD</a></li>
+                                        <li><a href="#">POLITICA DE PRIVACIDAD</a></li>                                 
+                                    </ul>
+							    </li>                                                                                   
+                            </ul>
+                        </div>
+                        
+                         <div class="form-inline my-2 my-md-0">
+                            <ul id="home-ul-navbar" class="navbar-nav mr-auto"> 
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link " data-toggle="dropdown" href="#"><img id="logo-tienduca" src="../../images/logos/logo-tienduca.png" /></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">RECETAS</a></li>
+                                        <li><a href="#">FACTURACIÓN</a></li>
+                                        <li><a href="#">REGISTRA TU TARJETA</a></li>
+                                        <li><a href="#">REGISTRA TU TARJETA DE PUNTOS</a></li>
+                                    </ul>
+                                </li>                           
+                            </ul>
+                        </div>
+                    </nav>                
+                </div>
+            </div>
+
+            <div id="main">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+            </div>
+        </div>
+    
+        <div>
+            <!-- Footer -->
+            <footer class="page-footer font-small unique-color-dark" style="background: #343a40">
+
+                <div style="background-color: #c5932e;">
+                    <div class="container">
+
+                    <!-- Grid row-->
+                    <div class="row py-4 d-flex align-items-center">
+
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0">¡Conéctate con nosotros en las redes sociales!</h6>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                        <!-- Facebook -->
+                        <a href="#" class="fb-ic" style="color: Black;">
+                            <i class="fab fa-facebook-square" style="font-size: x-large;"></i>
+                        </a>
+                        <!--Instagram-->
+                        <a href="#" class="ins-ic" style="color: Black;">
+                            <i class="fab fa-instagram" style="font-size: x-large;"></i>
+                        </a>
+
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row-->
+
+                    </div>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="container text-center text-md-left mt-5">
+
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                        <!-- Content -->
+                        <h6 class="text-uppercase font-weight-bold footer-h6">Ganadería REVUELTA</h6>
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p class="p-footer" style="text-align: justify;">
+                            Ganadería REVUELTA®, ubicada en la región de La Comarca Lagunera, al norte del país, forma parte de Grupo REVUELTA.
+                            Con más de 40 años de experiencia en el ramo de la ganadería y comercialización de carne de res de calidad superior.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold footer-h6">PRODUCTOS</h6>
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p class="p-footer">
+                            <a href="#!">Reserva Añeja</a>
+                        </p>
+                        <p class="p-footer">
+                            <a href="#!">Reserva del Corral</a>
+                        </p>
+                        <p class="p-footer">
+                            <a href="#!">Castilla</a>
+                        </p>
+                        <p class="p-footer">
+                            <a href="#!">Carne Seca</a>
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold footer-h6">TIENDUCA</h6>
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p class="p-footer">
+                            <a href="#!">Registro de puntos TARJETUCA</a>
+                        </p>
+                        <p class="p-footer">
+                            <a href="#!">Registra tu TARJETUCA</a>
+                        </p>
+                        <p class="p-footer">
+                            <a href="#!">Facturación</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold footer-h6">CONTACTO</h6>
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">                        
+                        <p class="p-footer">
+                            <i class="fa fa-home mr-3"></i> 
+                            Ventas Mayoreo
+                            <br />
+                            Calz. Ávila Camacho N° 1680 Ote.
+                            Col. Santa María C.P. 27020
+                            Torreón, Coahuila. México.
+                        </p>
+                        <p class="p-footer">
+                            <i class="fa fa-envelope mr-3"></i>ventas@ganaderiarevuelta.com.mx</p>
+                        <p class="p-footer">
+                            <i class="fa fa-phone mr-3"></i> + 01 800 623 7777 </p>
+                        <p class="p-footer">
+                            <i class="fa fa-print mr-3"></i> + (871) 747 4707</p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+
+                </div>
+                <!-- Footer Links -->
+
+                <!-- Call to action -->
+                <ul class="list-unstyled list-inline text-center py-2">
+                    <li class="list-inline-item">
+                        <h5 class="mb-1" style="color: White;">Recibir nuestras ofertas y promociones</h5>
+                    </li>
+                    <li class="list-inline-item">
+                        <form class="input-group">
+                            <input type="text" class="form-control form-control-sm" placeholder="Ingresa tu email" aria-label="Your email" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <a href="#!" class="btn btn-danger btn-rounded">SUSCRIBIRSE</a>
+                            </div>
+                        </form>
+                    </li>                                
+                </ul>
+                <!-- Call to action -->
+
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3" style="background-color: #1f2327; color: White;">© 2018 Copyright:
+                    <a href="https://mdbootstrap.com/bootstrap-tutorial/"> ganaderiarevuelta.com.mx</a>
+                </div>
+                <!-- Copyright -->
+
+            </footer>
+            <!-- Footer -->
+        </div>
+    </div>
+    
+    <asp:ContentPlaceHolder ID="FooterContentScript" runat="server" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuesax/dist/vuesax.umd.js"></script>
+    <script src="../../Content/js/vue/app.js"></script>
+    <script src="../../Content/js/ninja-slider/ninja-slider.js" ></script>
+    <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js" ></script>
+    
+</body>
+</html>

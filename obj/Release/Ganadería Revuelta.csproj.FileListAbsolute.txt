@@ -1,0 +1,6 @@
+C:\Users\diggutierrez\documents\visual studio 2010\Projects\Ganadería Revuelta\Ganadería Revuelta\bin\Ganadería Revuelta.dll
+C:\Users\diggutierrez\documents\visual studio 2010\Projects\Ganadería Revuelta\Ganadería Revuelta\bin\Ganadería Revuelta.pdb
+C:\Users\diggutierrez\documents\visual studio 2010\Projects\Ganadería Revuelta\Ganadería Revuelta\obj\Release\Ganadería Revuelta.dll
+C:\Users\diggutierrez\documents\visual studio 2010\Projects\Ganadería Revuelta\Ganadería Revuelta\obj\Release\Ganadería Revuelta.pdb
+C:\Users\diggutierrez\documents\visual studio 2010\Projects\Ganadería Revuelta\Ganadería Revuelta\obj\Release\Ganadería_Revuelta.Properties.Resources.resources
+C:\Users\diggutierrez\documents\visual studio 2010\Projects\Ganadería Revuelta\Ganadería Revuelta\obj\Release\Ganadería Revuelta.csproj.GenerateResource.Cache

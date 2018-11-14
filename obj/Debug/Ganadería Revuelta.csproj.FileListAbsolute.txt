@@ -1,0 +1,5 @@
+c:\users\diggutierrez\documents\visual studio 2010\Projects\Ganadería Revuelta\Ganadería Revuelta\bin\Ganadería Revuelta.dll
+c:\users\diggutierrez\documents\visual studio 2010\Projects\Ganadería Revuelta\Ganadería Revuelta\bin\Ganadería Revuelta.pdb
+c:\users\diggutierrez\documents\visual studio 2010\Projects\Ganadería Revuelta\Ganadería Revuelta\obj\Debug\Ganadería Revuelta.csprojResolveAssemblyReference.cache
+c:\users\diggutierrez\documents\visual studio 2010\Projects\Ganadería Revuelta\Ganadería Revuelta\obj\Debug\Ganadería Revuelta.dll
+c:\users\diggutierrez\documents\visual studio 2010\Projects\Ganadería Revuelta\Ganadería Revuelta\obj\Debug\Ganadería Revuelta.pdb
